@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #b6b1a7;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Encabezado */
+.pagina {
+  text-align: center;
+  margin-bottom: 1rem;
+  background-color: #d29bdd4b;
+}
+
+.encabezado {
+  background-color: #5a5754;
+  height: 10px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  font-size: 2rem;
+  background-color: #5a5754;
+  color: rgb(206, 213, 223);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Contenido principal */
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.seccion1 {
+  flex: 1 1 90%;
+  min-height: 200px;
+  background: rgb(169, 173, 187);
+  font-size: 1.2rem;
+  border-radius: 6px;
+  text-align: center;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.s1 {
+  font-size: 1.5rem;
+}
+
+.seccion2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  background: rgb(159, 161, 167);
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+/* Artículos */
+.articulo1 {
+  flex: 1 1 250px;
+  max-width: 300px;
+  background: #4b4545;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7%;
+  box-shadow: 0 8px 24px #eceaea;
+  display: flex;
+  margin: auto;
+  padding: 1rem;
+}
+
+.art2 {
+  height: auto;
+  padding: 0.5rem 1rem;
+  background: #5e857c;
+  color: #272522;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto 0 auto;
+  border-radius: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.img1 {
+  display: block;
+  border-radius: 7%;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .seccion1 {
+    font-size: 1rem;
+  }
+
+  .articulo1 {
+    flex: 1 1 100%;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .seccion2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .art2 {
+    width: 80%;
+  }
+}

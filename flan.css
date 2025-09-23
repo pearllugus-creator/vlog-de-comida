@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #dae9d0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+/* Encabezado */
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  font-size: 2rem;
+  background-color: #262b24;
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+/* Menú */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #474945;
+  justify-content: center;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: all 0.3s ease;
+}
+
+.soso:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+  font-size: 1.2rem;
+}
+
+/* Contenido principal */
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #afc0a8;
+  padding: 1rem;
+}
+
+/* Sección */
+.seccion1 {
+  width: 100%;
+  background-color: rgb(91, 99, 99);
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.titulo {
+  font-size: 1.8rem;
+  font-family: 'Times New Roman', Times, serif;
+  color: aliceblue;
+  text-align: center;
+}
+
+/* Artículos */
+.articulo1,
+.articulo2 {
+  width: 100%;
+  max-width: 1200px;
+  margin: 1rem auto;
+  background: #dae9d0;
+  font-size: 1rem;
+  text-align: justify;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.articulo2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gif {
+  max-width: 50%;
+  height: 50vh;
+  border-radius: 6px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .titulo {
+    font-size: 1.4rem;
+  }
+
+  .articulo1,
+  .articulo2 {
+    font-size: 0.95rem;
+    padding: 0.8rem;
+  }
+
+  .gif {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .titulo {
+    font-size: 1.2rem;
+  }
+
+  .gif {
+    max-width: 100%;
+  }
+}

@@ -122,17 +122,47 @@ a {
 }
 
 @media (max-width: 480px) {
-  .logo {
-    font-size: 1.2rem;
-    text-align: center;
-  }
 
-  .seccion2 {
-    flex-direction: column;
-    align-items: center;
-  }
 
-  .art2 {
-    width: 80%;
-  }
+/* Artículos */
+.articulo1 {
+  flex-direction: column;
+  max-width: 100px;
+  background: #4b4545;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7%;
+  box-shadow: 0 8px 24px #eceaea;
+  display: flex;
+  margin: auto;
+  padding: 1rem;
+}
+
+.art2 {
+  flex-wrap: wrap;
+  height: auto;
+  padding: 0.5rem 1rem;
+  background: #5e857c;
+  color: #272522;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto 0 auto;
+  border-radius: 5px;
+}
+
+a {
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-decoration: none;
+  color: inherit;
+}
+
+.img1 {
+  display: block;
+  border-radius: 7%;
+  max-width: 100%;
+  height: auto;
+}
 }
